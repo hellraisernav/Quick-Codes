@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="popwrap">
+        <div id="popbox">
+            <h1 id="poptitle">Title</h1>
+            <p id="poptext">Hello world</p>
+            <div id="popclose" onclick="pop.hide()">
+                &#9746
+            </div>
+        </div>
+    </div>
+    <script>
+        var pop = {
+            show: function (title, text) {
+                document.getElementById('poptitle').innerHTML = title;
+                document.getElementById('poptext').innerHTML = text;
+                document.getElementById('popwrap').style.display = "block";
+
+            },
+            hide: function () {
+                document.getElementById("popwrap").style.display = "none";
+            }
+        };
+    </script>
+</body>
+
+</html>

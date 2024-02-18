@@ -1,0 +1,26 @@
+.pie {
+  /* A1 circle */
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+
+  /* A2 Segments */
+  background: conic-gradient(
+    red 0deg 45deg,
+    green 45deg 190deg,
+    blue 190deg 360deg
+  );
+}
+/* B Legend*/
+/* B1 Legend Container */
+.legend{
+    display: grid;
+    grid-template-columns: 50px auto;
+    margin-top: 30px;
+}
+
+/* B2 Segments */
+.legend div{padding: 10px;}
+.segment1{background: red;}
+.segment2{background: green;}
+.segment3{background: blue;}

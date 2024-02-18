@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Footer Copyright With Js</title>
+</head>
+
+<body>
+    <footer>
+        <p>Copyright: <span id="current-year"></span><i class="fa-regular fa-copyright"></i></p>
+    </footer>
+    <script>
+        const year = document.querySelector("#current-year")
+        nyear = new Date().getFullYear()
+        nyear = nyear -1
+        year.innerHTML = nyear
+    </script>
+</body>
+
+</html>

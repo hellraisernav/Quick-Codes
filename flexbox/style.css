@@ -1,0 +1,12 @@
+.container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.box-1,.box-2,.box-3{
+    padding: 30px;
+    /* display: inline-block; */
+    background-color: coral;
+    margin: 10px;
+    width: 50px;
+}
